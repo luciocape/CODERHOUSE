@@ -1,0 +1,60 @@
+/*opción 3(Archivo .css)|escribirlos en un archivo aparte*/
+html{
+    font-size: 20px;/*medida de em*/
+}
+
+/*Estilisado por etiqueta*/
+/*Todas las etiquetas h2*/
+h2{
+    /*Propiedad y argumento*/
+}
+
+/*Estilisado por ID|solo puede haber un ID por elemento htlm*/
+#productos{
+
+}
+
+/*Estilisado por clase|una misma clase puede estar asignada a varios elementos*/
+.titulos{
+
+}
+
+/*Estilisado en cascada|solo afecta a los elementos dentro de los elementos padre*/
+#productos div{
+
+}
+
+/*Propiedades|font-family, font-size, font-style, font-weight, text-decoration, text-align,color*/
+p{
+    color: aliceblue;/*color letra*/
+    font-family: 'Courier New', Courier, monospace;/*tipo de fuente*/
+    font-size: 40px;/*tamaño letra*/
+    font-style: italic;/*tipo de letra*/
+    font-weight: bold;/*grosor de letra*/
+    text-decoration: underline;/*decoración*/
+    text-align: left;/*aliniación del texto*/
+}
+
+/*Unidades de medida absolutas*/
+p{
+    font-size: 20px;
+    margin: 40px;
+}
+
+/*Unidades de medida relativa*/
+img{
+    width: 100%;
+}
+a{
+    font-size: 2rem;/*16px por default html*/
+}
+#productos p{
+    font-size: 4em;/*medida por default configurada por el usuario*/
+}
+
+/*font-family y @font-face*/
+@font-face{
+    /*nombre para relacionar la tipografia y aplicarla*/
+    font-family: "camion-lleno-de-putas";
+    src: url("");/*url archivo local de la fuente*/
+}

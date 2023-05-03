@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!--Tipo de simbolos que se pueden usar (unicode iso 10646)-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Compativilidad con los ordenadores viejitos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Diseño responsive-->
+    <title>Document</title><!--Titulo-->
+</head>
+
+
+<body>
+    <!--Encabesados| h1-h6-->
+    <!--solo se puede usar un h1 por archivo-->
+    <H1>Practica html</H1>
+    <!--Espacios, enfasis y bold-->
+    <br>
+    <hr>
+    <!--estos son como un span, son un elemento en linea-->
+    <strong>dsaf</strong> 
+    <em>fjsdjsj</em>
+
+
+    <!--semantica-->
+    <!--son un div o span pero con otros nombres-->
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="servicios.html#Plataforma">Plataforma</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+
+    </section>
+    <footer>
+
+    </footer>
+
+    <!--div y span-->
+    <!--div: elementos en bloque por default-->
+    <div></div>
+    <!--span: elementos en linea por default-->
+    <span></span>
+
+    <!--Enlace absoluto|nos redirecciona a una web externa-->
+    <a href="">ver más</a> <a href="">instagram</a>
+
+    <!--Enlace relativo|nos direcciona a un archivo dentro del proyecto-->
+    <a href="servicios.html">servicios</a>
+
+    <!--Enlace interno|para moverte a una parte dentro del mismo archivo-->
+    <a href="#contacto">contacto</a>
+    <section id="contacto">
+        <h2>Find new roads</h2>
+    </section>
+    <!--Enlace relaterno (Relativo + interno)|Te redirecciona a
+         otro archivo dentro del proyecto y te mueve hacia una parte dentro de ese archivo-->
+    <a href="servicios.html#Plataforma">plataforma</a>
+
+    <!--Imagenes, videos, audios e iframe-->
+
+    <!--img-->
+    <!--SRC es source -
+    
+        ALT
+
+        1 - Texto descriptivo por si se rompe la ruta del elemento
+        2 - Seo posicionamiento organico para que se encuentre la foto y a la vez tu sitio
+        3 - Accesibilidad -> Explica de que se trata el elemento y 
+        lo traduce en el sistema de apoyo, tu sitio puede ser encontrado 
+        si los alt tienen semejanza con lo que se esta buscando
+    -->
+    <img src="" alt="">
+
+    <!--video-->
+    <video src=""></video>
+    <!--audio-->
+    <audio src=""></audio>
+    <!--iframe -> Un extracto de la web html de donde estas extrayendo el elemento multimedia -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.2988491762467!2d-58.96032259999999!3d-34.16427619999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb734fab7a03ed%3A0x9f00a1ff6c4cdcbd!2sKentucky!5e0!3m2!1ses!2sar!4v1682295114354!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://campus.robertorocca.org/totara/catalog/" frameborder="0"></iframe>
+
+    <!--Listas desordenadas-->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <!--Listas ordenadas-->
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+    <!--Tablas-->
+    <table>
+        <tr>
+            <td>sdfjs</td>
+            <td>asdfgsdga</td>
+        </tr>
+        <tr>
+            <td>dasfksk</td>
+            <td>dgsf</td>
+        </tr>
+        <tr>
+            <td>dfgraerg</td>
+            <td>sdffasfd</td>
+        </tr>
+    </table>
+    <!--Formularios-->
+    <form action="form.php" method="POST">
+        <!--inputs name y pass-->
+        <!--Label|indica la información que hay que ingresar en el input-->
+        <label for="">Nombre y apellido</label>
+        <!--Input|entradas del formulario, hay diferntes tipos-->
+        <input type="text" name="nombre" id="nombre" placeholder="Lucio Capezzuto">
+
+        <label for="">Contraseña</label>
+        <!--Tipo contraseña|se tapa la entrada para más seguridad -->
+        <input type="password" name="nombre" id="nombre">
+
+        <!--Selector|elegir diferentes opciones, menu desplegable-->
+        <select name="" id="">
+            <!--opciones-->
+            <option value="">Blala</option>
+            <option value="">Bssdfsdda</option>
+        </select>
+
+        <p>Comentarios</p>
+        <!--area para escribir-->
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <p>Acepta los terminos y condiciones</p>
+        <!--Tipo checbox|marcar un cuadrado-->
+        <input type="checkbox">
+
+        <!--Tipo submit|enviar-->
+        <input type="submit">
+    </form>
+</body>
+</html>

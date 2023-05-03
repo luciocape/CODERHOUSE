@@ -1,0 +1,42 @@
+html{
+    font-size: 15px;
+}
+body{
+    margin: 0;
+}
+header{
+    display: flex;
+    background-color: rgb(30, 34, 99);
+    position: sticky;
+    top: 0px;
+}
+nav{
+    width: 50%;
+}
+nav ul{
+    display: flex;
+    margin: auto;
+    margin-top: 0.5em;
+    padding-left: 0;
+    padding-bottom: 0;
+    width: 100%;
+    gap: 15%;
+    list-style: none;
+    
+}
+nav ul li{
+    width: auto;
+    height: 3em;
+}
+#logo{
+    display: flex;
+    width: 50%;
+}
+a{
+    text-decoration: none;
+    color: rgb(232, 235, 99);
+}
+button{
+    background-color: black;
+    
+}
