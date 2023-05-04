@@ -10,13 +10,20 @@ h2{
 }
 
 /*Estilisado por ID|solo puede haber un ID por elemento htlm*/
+#contenedor{
+    display: grid;
+    place-items: center;
+}
 #productos{
-
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
+    background-color: brown;
 }
 
 /*Estilisado por clase|una misma clase puede estar asignada a varios elementos*/
-.titulos{
-
+h2{
+    font-family: 'Rubik', sans-serif;
 }
 
 /*Estilisado en cascada|solo afecta a los elementos dentro de los elementos padre*/
@@ -57,4 +64,7 @@ a{
     /*nombre para relacionar la tipografia y aplicarla*/
     font-family: "camion-lleno-de-putas";
     src: url("");/*url archivo local de la fuente*/
+}
+h1{
+    font-family: "camion-lleno-de-putas";
 }
