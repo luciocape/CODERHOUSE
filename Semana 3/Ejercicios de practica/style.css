@@ -5,6 +5,9 @@ html{
 body{
     margin: 0;
 }
+h1{
+    display: inline-block;
+}
 /*header(sticky)|logo,nav*/
 header{
     display: flex;
@@ -49,13 +52,26 @@ nav ul li button a{
 
 /*Container(flex)|main, presentación, aside*/
 #container{
-display:  flex;
+display: flex;
 }
 main{
     width: 70%;
 }
-#presentación{
+#presentacion{
     text-align: center;
+}
+.presentacion-container{
+    height: 150px;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+}
+.presentacion-container .section{
+    margin: 0;
+    padding: 0 100%;
+    align-items: auto;
+    background-color: rgba(5, 7, 9, 0.5);
 }
 /*aside(block)|publicidad*/
 aside{

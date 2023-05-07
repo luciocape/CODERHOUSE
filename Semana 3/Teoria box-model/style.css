@@ -1,0 +1,104 @@
+/*Box-model|margin, border, padding, content*/
+div{
+    /*Padding|Agrega al contenido, como usar una campera*/
+    padding: 40px;
+    /*el color de background lo toma*/
+    background-color: tomato;
+    /*Border|Es el borde por afuera del padding*/
+    border: 5px solid black;
+    /*Margin|Es el espacio extra transparente que se le agrega a la caja*/
+    margin: 20px;
+    /*podes elegir que partes de la caja modificar (top, right, bottom, left)*/
+    padding-top: 50px;
+    border-left: 8px solid purple;
+    margin-bottom: 100px;
+    /*podes simplificar*/
+    margin: 30px 20px; /*top-bottom y left-right*/
+    padding: 40px 30px 18px 50px;/*top, right, bottom, left*/
+}
+
+/*Display|block, inline, inline-block, none*/
+span{
+    background-color: aquamarine;
+    /*Block|Ocupa 100% del espacio (de izquierda a derecha) del contenedor padre*/
+    /*
+    display: block;
+    /*Inline|Ocupa el espacio de su contenido*/
+    /*display: inline;
+    /*Inline-block|Ocupa el espacio del contenido, pero respeta las caracteristicas */
+    display: inline-block;
+    /*None|es como si no existiera, la hace desaparecer*/
+    /*display: none;*/
+}
+.ejemplo-inline-block{
+    display: inline-block;
+    background-color: brown;
+}
+
+/*Position|relative, absolute, fixed, sticky*/
+/*cuando usas la propiedad position se habilitan 
+los cuatro lados como propiedades (top, right, bottom, left)*/
+h1{
+    /*Relative|la caja se va a mover segun su posición natural*/
+    position: relative;
+    top: 80px;
+    left: 200px;
+    /*Absolute|la caja se va a mover segun los lados de la pantalla*/
+    position: absolute;
+    /*Fixed|se va a quedar fija en la posisión que se le de respecto a la pantalla,
+    pero el espacio se queda fijo en su posición natural */
+    position: fixed;
+    /*Sticky|funciona como el fixed, solo que se 
+    ativa a partir de que se llega a la posición asignada*/
+    position: sticky;
+    display: inline-block
+
+}
+
+/*Flex-box|elegir orden, dirección, tamaño.
+ Posicionaer elementos, adaptación*/
+/*Flex|se le debe aplicar display flex al padre*/
+/*Contendor padre tiene contenedores hijos*/
+#section-flex{
+    /*Activa las siguientes propiedades*/
+    display: flex;
+    /*Flex-wrap|automatiza que no se desborde nuestro body*/
+    flex-wrap: wrap;
+}
+/*Flex-direction*/
+.div1{
+    flex-direction: column;/*en columna*/
+}
+/*Flex-flow|unir los valores de direction y wrap*/
+.div2{
+    flex-flow: row wrap; /*en fila y wrap*/
+}
+
+/*Selector universal*/
+*{
+    margin: 0;
+    padding: 0;
+}
+#section-align{
+    background-color: rgba(red, green, blue, 0.6);
+    display: flex;
+    /*Justify-content|alinea horisontalmente*/
+    justify-content: center;
+    
+}
+.section{
+    height: 300px;
+    display: flex;
+    /*Align-items|alinea verticalmente*/
+    align-items: center;
+}
+h2{
+    display: inline-block;
+}
+.img{
+    /*Order|decide el orden de los elementos, si es positivo se mueve
+    a la derecha y si es negativo se mueve a la izquierda*/
+    order: -1;
+    /*Align-self|alinia verticalmente de forma individual*/
+    align-self: self-start;/*Self-start para arriva, Self-end para abajo*/
+}
