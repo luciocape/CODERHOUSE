@@ -62,9 +62,9 @@ a{
 /*font-family y @font-face*/
 @font-face{
     /*nombre para relacionar la tipografia y aplicarla*/
-    font-family: "camion-lleno-de-putas";
+    font-family: "camion-lleno-de-cachorros";
     src: url("");/*url archivo local de la fuente*/
 }
 h1{
-    font-family: "camion-lleno-de-putas";
+    font-family: "camion-lleno-de-cachorros";
 }

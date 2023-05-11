@@ -100,5 +100,5 @@ h2{
     a la derecha y si es negativo se mueve a la izquierda*/
     order: -1;
     /*Align-self|alinia verticalmente de forma individual*/
-    align-self: self-start;/*Self-start para arriva, Self-end para abajo*/
+/*Self-start para arriva, Self-end para abajo*/
 }
