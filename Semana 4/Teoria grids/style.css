@@ -1,0 +1,19 @@
+/*Contenedor*/
+.grid-container {
+    /*Display: grid|activa propiedades de grid,
+     la sección ahora se comporta como una grilla*/
+    display: grid;
+    border: solid 5px black;
+    /*Grid-template-rows|define las filas de las grillas con el tamaño deseado*/
+    /*grid-template-rows: 150px 150px 150px 150px;*/
+
+    /*Repeat|para crea varias del mismo tamaño*/
+    grid-template-rows: repeat(5, 150px);
+    /*Grid-template-columns|Lo mismo pero para las columnas*/
+    grid-template-columns: repeat(3,150px);
+}
+
+/*Divs hijos*/
+.grid-item {
+    border: solid 2px black;
+}
