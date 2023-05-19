@@ -11,9 +11,28 @@
     grid-template-rows: repeat(5, 150px);
     /*Grid-template-columns|Lo mismo pero para las columnas*/
     grid-template-columns: repeat(3,150px);
+
+    grid-template-areas: ;
 }
 
 /*Divs hijos*/
 .grid-item {
     border: solid 2px black;
+}
+
+.grid-primero{
+    /*Grid-column|indica el espacio que queres que un item de la grilla ocupe en la cantidad de columnas*/
+    grid-column: 1/3;/*Desde la columna 1 a la 3*/
+    /*Grid-row|lo mismo que grid-column solo que en la cantidad de filas*/
+    grid-row: 1/3;/*Desde la fila 1 a la fila 3*/
+    /*Lo mismo pero cambiando los valores de incio y final individualmente*/
+    /*Para espacio en columnas*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /*Para espacio en filas*/
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /*Lo mismo*/
+    grid-column: 1/span 3;
+    grid-row: 1/span 3;
 }
