@@ -8,31 +8,115 @@
     /*grid-template-rows: 150px 150px 150px 150px;*/
 
     /*Repeat|para crea varias del mismo tamaño*/
-    grid-template-rows: repeat(5, 150px);
+    grid-template-rows: repeat(4, 150px);
     /*Grid-template-columns|Lo mismo pero para las columnas*/
-    grid-template-columns: repeat(3,150px);
+    grid-template-columns: repeat(3, 150px);
 
-    grid-template-areas: ;
+    /*centro la grilla*/
+    justify-content: center;
+    /*centro los items de la grilla*/
+    align-items: center;
+
+    /*Row-gap|agrega espacio entre cada fila para separar los elementos*/
+    row-gap: 5px;
+    /*Column-gap|agrega espacio entre las columnas*/
+    column-gap: 30px;
 }
+
+
 
 /*Divs hijos*/
 .grid-item {
     border: solid 2px black;
+    background-color: aqua;
+    color: royalblue;
 }
 
-.grid-primero{
-    /*Grid-column|indica el espacio que queres que un item de la grilla ocupe en la cantidad de columnas*/
-    grid-column: 1/3;/*Desde la columna 1 a la 3*/
-    /*Grid-row|lo mismo que grid-column solo que en la cantidad de filas*/
-    grid-row: 1/3;/*Desde la fila 1 a la fila 3*/
+.grid-primero {
+    /*Grid-column|indica desde que linea empieza el
+     item y en que linea termina, si tiene 3 
+     columnas entonces tiene 4 lineas*/
+    grid-column: 1/3;
+    /*Desde la columna 1 a la 3*/
+    /*Grid-row|lo mismo que grid-column solo que en las filas*/
+    grid-row: 1/3;
+    /*Desde la linea de filas 1 a la linea 3*/
+
     /*Lo mismo pero cambiando los valores de incio y final individualmente*/
     /*Para espacio en columnas*/
-    grid-column-start: 1;
-    grid-column-end: 3;
+    /*grid-column-start: 1;*/
+    /*grid-column-end: 3;*/
+    
     /*Para espacio en filas*/
-    grid-row-start: 1;
-    grid-row-end: 3;
+    /*grid-row-start: 1;*/
+    /*grid-row-end: 3;*/
+    
     /*Lo mismo*/
-    grid-column: 1/span 3;
-    grid-row: 1/span 3;
+    /*grid-column: 1/span 3;*/
+    /*grid-row: 1/span 3;*/
+    
+    /*alinio horizontal y verticalmente el elemento individual*/
+    justify-self: start; /*Horizontalmente*/
+    align-self: start; /*Verticalmente*/
+
 }
+/*Grilla estructura de la página*/
+#grilla {
+    display: grid;
+    border: solid 10px brown;
+    grid-template-rows: 100px 1fr 1fr 75px;
+    grid-template-columns: 20% 1fr 15%;
+    /*Grid-template-areas|*/
+    grid-template-areas:
+        "nav header header"
+        "nav productos aside"
+        "nav servicios aside"
+        "footer footer footer";
+}
+
+.border {
+    border: solid 2px black;
+}
+/*Identifico cada parte con su nombre
+ para que grid-template-areas lo entienda*/
+ header{
+    /*Grid-area|indentifica el elemento html con ese nombre*/
+    grid-area: header;
+ }
+ #productos{
+    grid-area: productos;
+ }
+ #servicios{
+    grid-area: servicios;
+ }
+ nav{
+    grid-area: nav;
+ }
+ aside{
+    grid-area: aside;
+ }
+ footer{
+    grid-area: footer;
+ }
+ 
+ /*Regla de la media query*/
+ /*Movile*/
+@media only screen and (max-width: 500px) {
+    body{
+        background-color: goldenrod;
+    }
+}
+/*Tablet*/
+@media only screen and (min-width:501px) and (max-width: 960px) {
+    body{
+        background-color: #f2d6f9;
+    }
+    
+}
+/*Desktop*/
+@media only screen and (min-width: 961px){
+    body{
+        background-color: azure;
+    }
+}
+

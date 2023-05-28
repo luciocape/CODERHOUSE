@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Movile first|width=device-width = no se rompa la web sin importar los pixeles del dispositivo|initial-scale=1.0 = escala 1:1 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
@@ -11,7 +12,9 @@
     <!--Programación de varios elementos en visual studio-->
     <!--section>div.grid-item*9-->
     <section class="grid-container">
-        <div class="grid-item">1</div>
+        <!--Dos clases para un mismo elemento|tiene que ir en el
+             mismo class, no se puede crear otro-->
+        <div class="grid-item grid-primero">1</div>
         <div class="grid-item">2</div>
         <div class="grid-item">3</div>
         <div class="grid-item">4</div>
@@ -21,5 +24,26 @@
         <div class="grid-item">8</div>
         <div class="grid-item">9</div>
     </section>
+    <!--Grilla para la estructura de la pagina-->
+    <div id="grilla">
+        <header class="border">
+            Header
+        </header>
+        <section id="productos" class="border">
+            Section
+        </section>
+        <section id="servicios" class="border">
+            Section
+        </section>
+        <nav class="border">
+            Navegación
+        </nav>
+        <aside class="border">
+            Aside
+        </aside>
+        <footer class="border">
+            Pie de pagina
+        </footer>
+    </div>
 </body>
 </html>
