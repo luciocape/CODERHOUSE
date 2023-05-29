@@ -1,0 +1,26 @@
+header{
+    display: inline;
+    height: 200px;
+    width: 500px;
+    background-color: rgba(0, 138, 92, 0.795);
+}
+
+nav{
+    height: 500% ;
+    width: 50%;
+}
+header:nth-child(1){
+    color: blue;
+}
+nav a:hover{
+
+}
+nav a:visited{
+
+}
+nav:not(a){
+
+}
+nav:not(a):hover{
+
+}
